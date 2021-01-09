@@ -117,7 +117,7 @@ public class Restaurant extends AppCompatActivity {
         private void getNearby(Context context, String lat, String longs){
             String URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?"
                     +"location=" + lat + "," + longs + "&radius=3000"
-                    + "&type=restaurant" + "&sensor=true" + "&key=AIzaSyCNLyMOH3YhQZWaQmQPf-3faTxYd4GLvC4";
+                    + "&type=restaurant" + "&sensor=true" + "&key=AIzaSyD5R6m-7M1h_jfB8H3WZTBnYX3deDn6UWk";
             RequestQueue requestQueue = Volley.newRequestQueue(context);
 
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, URL, null, new Response.Listener<JSONObject>() {
